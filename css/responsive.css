@@ -151,3 +151,34 @@
         transform: translateX(5px);
     }
 }
+
+/* Fix 1 — Navbar title ไม่ตัดบรรทัด */
+@media screen and (max-width: 768px) {
+    .nav-logo, .navbar-brand {
+        font-size: 0.75rem;
+        white-space: nowrap;
+    }
+}
+
+/* Fix 2 — Skills inventory ไม่ overflow */
+@media screen and (max-width: 768px) {
+    .inventory-container {
+        overflow: hidden;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .inventory-wrapper {
+        width: 100%;
+    }
+}
+
+/* Fix 3 — Contact card ไม่ล้นขวา */
+@media screen and (max-width: 768px) {
+    .guild-card {
+        width: calc(100% - 2rem);
+        margin: 0 1rem;
+        box-sizing: border-box;
+        overflow: hidden;
+    }
+}
