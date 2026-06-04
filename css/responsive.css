@@ -227,3 +227,10 @@
         text-align: center;
     }
 }
+
+/* Fix 5 */
+@media screen and (max-width: 480px) {
+    .logo {
+        font-size: 0.55rem;
+    }
+}
