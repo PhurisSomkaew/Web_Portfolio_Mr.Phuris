@@ -1,0 +1,153 @@
+/* Mobile Responsive Adjustments */
+
+/* Navbar Fixes */
+@media screen and (max-width: 768px) {
+    .nav-links {
+        background-color: var(--nav-bg); /* Ensure solid background */
+        z-index: 999; /* Ensure below navbar but above content */
+        /* Ensure height covers screen */
+        height: calc(100vh - 80px); /* Subtract navbar estimated height */
+        top: 80px;
+        overflow-y: auto; /* Allow scrolling if menu is long */
+    }
+    
+    /* Ensure burger is visible and clickable */
+    .burger {
+         z-index: 1001; 
+    }
+}
+
+/* 1. General Mobile Tweaks */
+@media screen and (max-width: 600px) {
+    .section-container {
+        padding: 6rem 1rem 4rem; /* Reduce padding */
+    }
+
+    .section-title {
+        font-size: 1.2rem; /* Smaller titles */
+    }
+}
+
+/* 2. Projects Section Mobile Tweaks */
+@media screen and (max-width: 600px) {
+    /* Adjust Project Box Size */
+    .stage-box {
+        width: 280px; /* Shrink from 320px to fit smaller screens */
+        padding: 1rem;
+    }
+
+    /* Adjust Navigation Arrows to be at bottom or smaller */
+    .stage-nav {
+        width: 40px;
+        height: 40px;
+        font-size: 1.2rem;
+        /* Move arrows to the bottom inside the container */
+        top: auto;
+        bottom: 10px; /* Inside the container at the bottom */
+        transform: none; /* Reset vertical center transform */
+        z-index: 30;
+    }
+    
+    .stage-nav:active {
+        transform: scale(0.9);
+    }
+    
+    .stage-nav.left {
+        left: 20px;
+    }
+    
+    .stage-nav.right {
+        right: 20px;
+    }
+
+    /* Ensure scroll wrapper has space for bottom arrows */
+    .stage-scroll-wrapper {
+        padding-bottom: 60px; /* Add space for arrows */
+        align-items: flex-start; /* Align content to top so padding is at bottom */
+    }
+    
+    /* Center the stage box in mobile view */
+    .stage-node {
+        transform: scale(1.0); /* Reset scale */
+        margin: 1rem 0; /* Reduced margin */
+        width: 100%; /* Fill container */
+    }
+    
+    .stage-node:hover {
+        transform: scale(1.02) translateY(-2px); /* Subtle hover */
+    }
+
+    /* Adjust the image to fit */
+    .stage-visual img {
+        max-width: 80%;
+        height: auto !important; /* Override inline height */
+        max-height: 80px; /* Cap height */
+    }
+    
+    /* Make the visuals slightly smaller */
+    .stage-visual {
+        height: 100px;
+    }
+    
+    .stage-visual i, .stage-visual img {
+        transform: scale(0.8); /* Scale down content */
+    }
+}
+
+/* 3. Skills Section: Ensure inventory fits */
+@media screen and (max-width: 400px) {
+    .inventory-grid {
+        gap: 10px; /* Tighter gap */
+    }
+    
+    .item-slot {
+        width: 50px;
+        height: 50px;
+    }
+    
+    .item-slot i, .item-slot span {
+        font-size: 1.2rem;
+    }
+
+    /* Move arrows outside or adjust visibility */
+    .inv-arrow {
+        width: 30px;
+        height: 30px;
+        font-size: 1rem;
+    }
+}
+
+/* 4. Contact Card Mobile */
+@media screen and (max-width: 600px) {
+    .guild-card {
+        width: 100%;
+        margin: 0 10px;
+    }
+    
+    .card-body {
+        padding: 1.5rem 1rem;
+        gap: 1.5rem;
+    }
+    
+    .avatar-frame {
+        width: 100px;
+        height: 100px;
+    }
+    
+    .stat-row {
+        font-size: 1.1rem; /* Smaller text */
+        flex-direction: column; /* Stack label and value */
+        align-items: flex-start;
+        border-bottom: 1px dashed #ccc;
+        padding-bottom: 5px;
+        margin-bottom: 10px;
+    }
+
+    .stat-row .dots {
+        display: none; /* Hide dots in stacked view */
+    }
+    
+    .stat-row:hover {
+        transform: translateX(5px);
+    }
+}

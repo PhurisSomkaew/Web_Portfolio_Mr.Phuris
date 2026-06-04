@@ -1,0 +1,998 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%22256%22 height=%22256%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2250%22 fill=%22%230058ff%22></rect><path fill=%22%23fff%22 d=%22M72.15 21.33L72.15 21.33Q74.49 22.50 74.90 25.02Q75.30 27.54 73.59 29.61L73.59 29.61Q72.42 31.23 70.58 31.41Q68.73 31.59 66.84 30.69L66.84 30.69Q64.68 29.70 62.30 29.16Q59.91 28.62 57.30 28.62L57.30 28.62Q52.44 28.62 48.62 30.15Q44.79 31.68 42.09 34.52Q39.39 37.35 38.00 41.22Q36.60 45.09 36.60 49.77L36.60 49.77Q36.60 55.26 38.18 59.31Q39.75 63.36 42.54 66.06Q45.33 68.76 49.11 70.07Q52.89 71.37 57.30 71.37L57.30 71.37Q59.73 71.37 62.16 70.92Q64.59 70.47 66.84 69.30L66.84 69.30Q68.73 68.40 70.58 68.67Q72.42 68.94 73.68 70.56L73.68 70.56Q75.48 72.81 74.99 75.20Q74.49 77.58 72.24 78.66L72.24 78.66Q69.90 79.83 67.43 80.60Q64.95 81.36 62.43 81.77Q59.91 82.17 57.30 82.17L57.30 82.17Q50.82 82.17 45.02 80.10Q39.21 78.03 34.67 73.98Q30.12 69.93 27.51 63.86Q24.90 57.78 24.90 49.77L24.90 49.77Q24.90 42.84 27.29 36.99Q29.67 31.14 34.04 26.87Q38.40 22.59 44.34 20.21Q50.28 17.82 57.30 17.82L57.30 17.82Q61.26 17.82 65.04 18.72Q68.82 19.62 72.15 21.33Z%22></path></svg>" />
+    <meta charset="UTF-8">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="-1">
+    <meta http-equiv="CACHE-CONTROL" content="NO-CACHE">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- 8-bit Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap" rel="stylesheet">
+
+    <!-- CSS Stylesheets -->
+    <link rel="stylesheet" href="css/master.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/start-screen.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <title>Phuris.S Portfolio</title>
+</head>
+
+
+    <!-- START SCREEN -->
+    <div id="start-screen">
+        <div class="start-content">
+            <h1 class="start-title">PHURIS SOMKAEW PORTFOLIO</h1>
+            <br>
+            <p class="start-subtitle">PRESS START TO VIEW</p>
+            <br>
+            <button class="start-btn" id="start-btn">START</button>
+        </div>
+        
+        <!-- Retro Loading Animation (Hidden by default) -->
+        <div class="loading-container" style="display: none;">
+            <div class="loading-text">LOADING ...</div>
+            <div class="loading-bar-container">
+                <img src="images/npc.svg" class="pixel-runner" alt="wizard">
+                <div class="loading-bar-border">
+                    <div class="loading-bar-fill"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">WELCOME TO MY PORT 😊</div>
+        <ul class="nav-links">
+            <li><a href="#home">HOME</a></li>
+            <li><a href="#about">ABOUT</a></li>
+            <li><a href="#skills">SKILLS</a></li>
+            <li><a href="#projects">PROJECTS</a></li>
+            <li><a href="#contact">CONTACTS</a></li>
+        </ul>
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-wrapper">
+            <div class="hero-content reveal-on-scroll reveal-right">
+                <h1><span class="highlight">Mr.Phuris</span></h1>
+                <br>
+                <h2>Software Engineer</h2>
+                <h2>DevOps</h2>
+                <h2>Software Developer</h2>
+                <div id="education" class="edu-savefile-wrap reveal-on-scroll reveal-up delay-300">
+                    <div class="edu-savefile-header">💾 SAVE DATA — ACADEMIC RECORDS</div>
+                    <div class="edu-savefile-list">
+                        <div class="edu-save-slot">
+                            <div class="edu-slot-num">01</div>
+                            <div class="edu-save-thumb">
+                                <span class="edu-thumb-ico">🎓</span>
+                                <span class="edu-thumb-lbl">UNIV</span>
+                            </div>
+                            <div class="edu-save-info">
+                                <div class="edu-save-title">KASETSART UNIVERSITY</div>
+                                <div class="edu-save-desc">Bachelor of Industrial Engineering</div>
+                                <div class="edu-save-time">4 YRS · CLEARED 2023</div>
+                            </div>
+                            <div class="edu-save-status">
+                                <span class="edu-gpa-badge">GPA 3.14</span>
+                                <span class="edu-save-yr">2019 – 2023</span>
+                                <span class="edu-clear-badge">✓ CLEAR</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-image reveal-on-scroll reveal-left">
+                <div class="player-indicator">1P ▼</div>
+                <img src="images/mr_phuris_chopper.jpg" alt="Phuris Profile">
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="section-container">
+        <div class="npc-container">
+            <div class="npc-character reveal-on-scroll reveal-right">
+                <img src="images/npc.svg" alt="NPC Guide"> <!-- Coding-generated NPC -->
+            </div>
+            <div class="about-content reveal-on-scroll reveal-left">
+                <div class="npc-name">ABOUT ME</div>
+                <div class="about-text">
+                    <ul>
+                        <li>1st career : 9 months & a half as software engineer (Flutter ERP web developer & software field service)</li>
+                        <li>2nd career : 3 months as DevOps engineer</li>
+                        <li>3rd career : 1 year & 2 months as software engineer <br>(previous was software developer)</li>
+                        <li>Hard-working and self-learning simultaneously / Open-minded to suggestions from the corporation.</li>
+                    </ul>
+                </div>
+                <div class="about-arrow">▼</div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <!-- Skills Section (Inventory Style) -->
+    <section id="skills" class="section-container">
+        <h2 class="section-title reveal-on-scroll reveal-up">SKILLS INVENTORY</h2>
+        
+        <div class="inventory-container reveal-on-scroll reveal-pop">
+            <button class="inv-arrow left" id="prevSkill">&lt;</button>
+            <button class="inv-arrow right" id="nextSkill">&gt;</button>
+
+            <div class="inventory-wrapper">
+                
+                <!-- Category: Weapons (Languages/Frontend) -->
+                <div class="inventory-category">
+                    <h3>Coding Languages</h3>
+                    <div class="inventory-grid">
+                        <div class="item-slot"><i class="fab fa-android"></i><span class="tooltip">Flutter (Android/Web)</span></div>
+                        <div class="item-slot"><i class="fab fa-html5"></i><span class="tooltip">HTML</span></div>
+                        <div class="item-slot"><i class="fab fa-css3-alt"></i><span class="tooltip">CSS</span></div>
+                        <div class="item-slot"><i class="fab fa-js-square"></i><span class="tooltip">JavaScript</span></div>
+                        <div class="item-slot"><i class="fab fa-react"></i><span class="tooltip">React.js</span></div>
+                        <div class="item-slot"><i class="fab fa-python"></i><span class="tooltip">Python</span></div>
+                        <div class="item-slot"><span style="font-size:0.6rem">GO</span><span class="tooltip">Golang</span></div>
+                        <div class="item-slot"><span style="font-size:0.6rem">C++</span><span class="tooltip">C++</span></div>
+                    </div>
+                </div>
+
+                <!-- Category: Armor (Infrastructure/DevOps) -->
+                <div class="inventory-category">
+                    <h3>Infrastructure/DevOps</h3>
+                    <div class="inventory-grid">
+                        <div class="item-slot"><i class="fab fa-linux"></i><span class="tooltip">Ubuntu Linux</span></div>
+                        <div class="item-slot"><i class="fab fa-docker"></i><span class="tooltip">Docker</span></div>
+                        <div class="item-slot"><i class="fas fa-dharmachakra"></i><span class="tooltip">Kubernetes</span></div>
+                        <div class="item-slot"><i class="fab fa-gitlab"></i><span class="tooltip">Gitlab CI/CD</span></div>
+                        <div class="item-slot"><i class="fab fa-digital-ocean"></i><span class="tooltip">DigitalOcean</span></div>
+                        <div class="item-slot"><i class="fab fa-microsoft"></i><span class="tooltip">Azure Container Apps</span></div>
+                        <div class="item-slot"><i class="fas fa-box-open"></i><span class="tooltip">Azure Registry</span></div>
+                        <div class="item-slot"><i class="fab fa-raspberry-pi"></i><span class="tooltip">Raspberry Pi OS</span></div>
+                        <div class="item-slot"><span style="font-size:0.5rem">NGINX</span><span class="tooltip">Nginx</span></div>
+                        <div class="item-slot"><img src="images/kong.svg" alt="Synapse" style="width:1.5rem; height:1.5rem;"></i><span class="tooltip">Kong Gateway</span></div>
+                    </div>
+                </div>
+
+                <!-- Category: Scrolls (Data & Databases) -->
+                <div class="inventory-category">
+                    <h3>Data Management</h3>
+                    <div class="inventory-grid">
+                         <div class="item-slot"><i class="fas fa-database"></i><span class="tooltip">NoSQL (Firebase/Mongo)</span></div>
+                        <div class="item-slot"><i class="fas fa-memory"></i><span class="tooltip">Redis (Caching)</span></div>
+                        <div class="item-slot"><i class="fas fa-table"></i><span class="tooltip">RDBMS (MySQL/PostgreSQL/MariaDB)</span></div>
+                        <div class="item-slot"><i class="fas fa-clock"></i><span class="tooltip">InfluxDB</span></div>
+                        <div class="item-slot"><i class="fas fa-cloud"></i><span class="tooltip">Azure Blob Storage</span></div>
+                        <div class="item-slot"><i class="fas fa-cube"></i><span class="tooltip">Azure Databricks</span></div>
+                        <div class="item-slot"><img src="images/azure-synapse.svg" alt="Synapse" style="width:1.5rem; height:1.5rem;"><span class="tooltip">Azure Synapse Analytics</span></div>
+                        <div class="item-slot"><i class="fas fa-project-diagram"></i><span class="tooltip">Microsoft Fabric</span></div>
+                        <div class="item-slot"><i class="fas fa-address-book"></i><span class="tooltip">OpenLDAP</span></div>
+                        <div class="item-slot"><i class="fas fa-key"></i><span class="tooltip">Keycloak</span></div>
+                    </div>
+                </div>
+
+                <!-- Category: Artifacts (Tools & API) -->
+                <div class="inventory-category">
+                    <h3>Tools & etc.</h3>
+                    <div class="inventory-grid">
+                        <div class="item-slot"><i class="fas fa-network-wired"></i><span class="tooltip">ERP Concepts</span></div>
+                        <div class="item-slot"><i class="fas fa-file-excel"></i><span class="tooltip">Data Visualization / Design of experiment using Excel</span></div>
+                        <div class="item-slot"><i class="fas fa-chart-line"></i><span class="tooltip">Grafana</span></div>
+                        <div class="item-slot"><i class="fas fa-eye"></i><span class="tooltip">Zabbix Agent</span></div>
+                        <div class="item-slot"><i class="fab fa-line"></i><span class="tooltip">Line API</span></div>
+                        <div class="item-slot"><i class="fab fa-telegram"></i><span class="tooltip">Telegraf (Telegram)</span></div>
+                        <div class="item-slot"><i class="fas fa-bolt"></i><span class="tooltip">n8n Workflow</span></div>
+                        <div class="item-slot"><i class="fab fa-google-drive"></i><span class="tooltip">Google App Script</span></div>
+                        <div class="item-slot"><i class="fas fa-cogs"></i><span class="tooltip">Odoo API (XML-RPC)</span></div>
+                        <div class="item-slot"><i class="fas fa-bezier-curve"></i><span class="tooltip">Node-RED</span></div>
+                        <div class="item-slot"><i class="fas fa-microscope"></i><span class="tooltip">cAdvisor</span></div>
+                        <div class="item-slot"><i class="fas fa-burn"></i><span class="tooltip">Prometheus</span></div>
+                        <div class="item-slot"><span style="font-size:0.45rem">POSTMAN</span><span class="tooltip">Postman</span></div>
+                        <div class="item-slot"><i class="fas fa-dog"></i><span class="tooltip">Bruno API</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section-container">
+        <h2 class="section-title reveal-on-scroll reveal-up">ACHIEVEMENTS</h2>
+        
+        <div class="stage-select-container">
+            <!-- Navigation Controls -->
+            <button class="stage-nav left" id="prevProject">◀</button>
+            <button class="stage-nav right" id="nextProject">▶</button>
+
+            <div class="stage-scroll-wrapper reveal-on-scroll reveal-right">
+                
+                <!-- Level 1 -->
+                <div class="stage-unit">
+                    <div class="stage-node">
+                        <div class="node-marker">1</div>
+                        <div class="stage-box">
+                            <div class="stage-header">
+                                <span class="lvl-num">1-1</span>
+                            </div>
+                            <div class="stage-visual">
+                                <i class="fas fa-chart-bar fa-3x"></i>
+                            </div>
+                            <div class="stage-info">
+                                <h3>Flutter</h3>
+                                <h3>Mini Project</h3>
+                                <p>Visualizing line/bar chart<br>from NoCodeAPI/MongoDB</p>
+                                <div class="stage-tags">
+                                    <span>FLUTTER</span><span>NOCODEAPI</span><span>MONGODB</span>
+                                </div>
+                            </div>
+                            <div class="stage-actions">
+                                <a href="https://1drv.ms/b/c/0428e51e26843851/IQSaYXK2phhJR6uIOvQcgIdpAQZ0Bu6V-VyrlSpynu6Hfv8" 
+                                   target="_blank" 
+                                   class="press-start-btn">DETAILS</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="path-connector"></div>
+                </div>
+
+                <!-- Level 2 -->
+                <div class="stage-unit">
+                    <div class="stage-node">
+                        <div class="node-marker">2</div>
+                        <div class="stage-box">
+                            <div class="stage-header">
+                                <span class="lvl-num">1-2</span>
+                            </div>
+                            <div class="stage-visual">
+                                <i class="fas fa-boxes fa-3x"></i>
+                            </div>
+                            <div class="stage-info">
+                                <h3>INVENTORY APP</h3>
+                                <p>Internal inventory web app<br>using ERP concept and Flutter web</p>
+                                <div class="stage-tags">
+                                    <span>FLUTTER</span><span>FIREBASE</span>
+                                </div>
+                            </div>
+                            <div class="stage-actions">
+                                <a href="https://1drv.ms/b/c/0428e51e26843851/IQQqSLvHd1eHRKL-BhglNri0AX3xDp4jt4HYUzG4SfCF6RU" 
+                                   target="_blank" 
+                                   class="press-start-btn">DETAILS</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="path-connector"></div>
+                </div>
+
+                <!-- Level 3 -->
+                <div class="stage-unit">
+                    <div class="stage-node">
+                        <div class="node-marker">3</div>
+                        <div class="stage-box">
+                            <div class="stage-header">
+                                <span class="lvl-num">1-3</span>
+                            </div>
+                            <div class="stage-visual">
+                                <i class="fas fa-rocket fa-3x"></i>
+                            </div>
+                            <div class="stage-info">
+                                <h3>GITLAB<br>CI/CD PIPELINE</h3>
+                                <p>Automating CI/CD BaaS pipeline<br>with GitLab CI/CD</p>
+                                <div class="stage-tags">
+                                    <span>GITLAB</span><span>DOCKER</span><span>HARBOR</span><span>KUBERNETES</span><span>HELM</span>
+                                </div>
+                            </div>
+                            <div class="stage-actions">
+                                <a href="https://1drv.ms/b/c/0428e51e26843851/IQQrsHkZrBxbS7XBK9xeMLKTAXadQ7Spat0viPnF4grXzWU" 
+                                   target="_blank" 
+                                   class="press-start-btn">DETAILS</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="path-connector"></div>
+                </div>
+
+                <!-- Level 4 -->
+                <div class="stage-unit">
+                    <div class="stage-node">
+                        <div class="node-marker">4</div>
+                        <div class="stage-box">
+                            <div class="stage-header">
+                                <span class="lvl-num">1-4</span>
+                            </div>
+                            <div class="stage-visual">
+                                <i class="fas fa-users-cog fa-3x"></i>
+                            </div>
+                            <div class="stage-info">
+                                <h3>DATA<br>MIGRATION</h3>
+                                <p>Users migration using<br>OpenLDAP-Keycloak-MariaDB/PostgreSQL</p>
+                                <div class="stage-tags">
+                                    <span>OPENLDAP</span><span>KEYCLOAK</span><span>MARIADB</span><span>POSTGRESQL</span>
+                                </div>
+                            </div>
+                            <div class="stage-actions">
+                                <a href="https://1drv.ms/b/c/0428e51e26843851/IQRjBPzhTqOjTb6X1ccZYUrKAed7MTAxROzemIt0veumBfI" 
+                                   target="_blank" 
+                                   class="press-start-btn">DETAILS</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="path-connector"></div>
+                </div>
+
+                <!-- Level 5 -->
+                <div class="stage-unit">
+                    <div class="stage-node">
+                        <div class="node-marker">5</div>
+                        <div class="stage-box">
+                            <div class="stage-header">
+                                <span class="lvl-num">1-5</span>
+                            </div>
+                            <div class="stage-visual">
+                                <i class="fas fa-microchip fa-3x"></i>
+                            </div>
+                            <div class="stage-info">
+                                <h3>MINI STATION INDOOR</h3>
+                                <p>IOT coding / Data pipeline / Visualization</p>
+                                <div class="stage-tags">
+                                    <span>C++</span><span>MQTT</span><span>NODE-RED</span><span>POSTGRESQL</span>
+                                </div>
+                            </div>
+                            <div class="stage-actions">
+                                <a href="https://1drv.ms/b/c/0428e51e26843851/IQRES-v45dXwRJoTpr64eRceAVSyM2LeHUZiRfCpIMfpsBY" 
+                                   target="_blank" 
+                                   class="press-start-btn">DETAILS</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="path-connector"></div>
+                </div>
+
+                <!-- Level 6 -->
+                <div class="stage-unit">
+                    <div class="stage-node">
+                        <div class="node-marker">6</div>
+                        <div class="stage-box">
+                            <div class="stage-header">
+                                <span class="lvl-num">1-6</span>
+                            </div>
+                            <div class="stage-visual">
+                                <i class="fas fa-sim-card fa-3x"></i>
+                            </div>
+                            <div class="stage-info">
+                                <h3>SIM EXPIRATION BOT</h3>
+                                <p>Automating SIM card expiration notifications</p>
+                                <div class="stage-tags">
+                                    <span>NODE-RED</span><span>MYSQL</span><span>TELEGRAM</span>
+                                </div>
+                            </div>
+                            <div class="stage-actions">
+                                <a href="https://1drv.ms/b/c/0428e51e26843851/IQT5Annd-kwXRJePu4jmGILSAZxBFfKRVjvtWBkmDgyerXc" 
+                                   target="_blank" 
+                                   class="press-start-btn">DETAILS</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="path-connector"></div>
+                </div>
+
+                <!-- Level 7 -->
+                <div class="stage-unit">
+                    <div class="stage-node">
+                        <div class="node-marker">7</div>
+                        <div class="stage-box">
+                            <div class="stage-header">
+                                <span class="lvl-num">1-7</span>
+                            </div>
+                            <div class="stage-visual">
+                                <i class="fas fa-play fa-3x"></i>
+                            </div>
+                            <div class="stage-info">
+                                <h3>SCRIPT APP</h3>
+                                <p>Choosing script & executing automatically</p>
+                                <div class="stage-tags">
+                                    <span>PYTHON (STREAMLIT)</span><span>MONGODB</span>
+                                </div>
+                            </div>
+                            <div class="stage-actions">
+                                <a href="https://1drv.ms/b/c/0428e51e26843851/IQSVe-Oi_iHLS53TQu8wW9aiAUIUhdYMCbrvDioR8CgMnF4" 
+                                   target="_blank" 
+                                   class="press-start-btn">DETAILS</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="path-connector"></div>
+                </div>
+
+                <!-- Level 8 -->
+                <div class="stage-unit">
+                    <div class="stage-node">
+                        <div class="node-marker">8</div>
+                        <div class="stage-box">
+                            <div class="stage-header">
+                                <span class="lvl-num">1-8</span>
+                            </div>
+                            <div class="stage-visual">
+                                <i class="fab fa-line fa-3x"></i>
+                            </div>
+                            <div class="stage-info">
+                                <h3>MUI-HELPDESK</h3>
+                                <p>Helpdesk interface using LINE Rich Menu</p>
+                                <div class="stage-tags">
+                                    <span>LINE</span><span>JAVASCRIPT</span><span>NODE.JS</span><span>EXPRESS.JS</span><span>VERCEL</span>
+                                </div>
+                            </div>
+                            <div class="stage-actions">
+                                <a href="https://1drv.ms/b/c/0428e51e26843851/IQQJoNSU-PtaRqwA4-7gIqxMARV8UPOuPx9JKYRO61jTNGw" 
+                                   target="_blank" 
+                                   class="press-start-btn">DETAILS</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="path-connector"></div>
+                </div>
+
+                <!-- Level 9 -->
+                <div class="stage-unit">
+                    <div class="stage-node">
+                        <div class="node-marker">9</div>
+                        <div class="stage-box">
+                            <div class="stage-header">
+                                <span class="lvl-num">1-9</span>
+                            </div>
+                            <div class="stage-visual">
+                                <i class="fas fa-chart-pie fa-3x"></i>
+                            </div>
+                            <div class="stage-info">
+                                <h3>ANALYSIS<br>WEB APP</h3>
+                                <p>E-Tongue & E-Nose Analysis Web App</p>
+                                <div class="stage-tags">
+                                    <span>HTML</span><span>CSS</span><span>JAVASCRIPT</span><span>PYTHON</span><span>NODE.JS</span><span>MYSQL</span><span>POSTGRESQL</span><span>NGINX</span><span>DOCKER</span><span>KUBERNETES</span><span>1-24</span><span>KONG</span><span>GITHUB ACTIONS</span><span>HARBOR</span>
+                                </div>
+                            </div>
+                            <div class="stage-actions">
+                                <a href="https://1drv.ms/b/c/0428e51e26843851/IQSNZQ-BVmykQKSRa9smwbKgAeWt0IE6bGPI1HM8zNo92rE" 
+                                   target="_blank" 
+                                   class="press-start-btn">DETAILS</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="path-connector"></div>
+                </div>
+
+                <!-- Level 10 -->
+                <div class="stage-unit">
+                    <div class="stage-node">
+                        <div class="node-marker">10</div>
+                        <div class="stage-box">
+                            <div class="stage-header">
+                                <span class="lvl-num">1-10</span>
+                            </div>
+                            <div class="stage-visual">
+                                <i class="fas fa-chart-line fa-3x"></i>
+                            </div>
+                            <div class="stage-info">
+                                <h3>REAL-TIME DASHBOARD</h3>
+                                <p>Real-time data visualization</p>
+                                <div class="stage-tags">
+                                    <span>GRAFANA</span><span>INFLUXDB</span><span>MYSQL</span>
+                                </div>
+                            </div>
+                            <div class="stage-actions">
+                                <a href="https://1drv.ms/b/c/0428e51e26843851/IQSdbqVOkYuiQqydgLNyChSTAQNgdOaUgh3JmPIAfq3drjE" 
+                                   target="_blank" 
+                                   class="press-start-btn">DETAILS</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="path-connector"></div>
+                </div>
+
+                <!-- Level 11 -->
+                <div class="stage-unit">
+                    <div class="stage-node">
+                        <div class="node-marker">11</div>
+                        <div class="stage-box">
+                            <div class="stage-header">
+                                <span class="lvl-num">1-11</span>
+                            </div>
+                            <div class="stage-visual">
+                                <i class="fas fa-server fa-3x"></i>
+                            </div>
+                            <div class="stage-info">
+                                <h3>MONITORING SERVER</h3>
+                                <p>Server monitoring visualization</p>
+                                <div class="stage-tags">
+                                    <span>GRAFANA</span><span>INFLUXDB</span>
+                                </div>
+                            </div>
+                            <div class="stage-actions">
+                                <a href="https://1drv.ms/b/c/0428e51e26843851/IQSAdZmY07D5SrHgAUKiAUgxAR53SAvu75w8ISRimASJeHs" 
+                                   target="_blank" 
+                                   class="press-start-btn">DETAILS</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="path-connector"></div>
+                </div>
+
+                <!-- Level 12 -->
+                <div class="stage-unit">
+                    <div class="stage-node">
+                        <div class="node-marker">12</div>
+                        <div class="stage-box">
+                            <div class="stage-header">
+                                <span class="lvl-num">1-12</span>
+                            </div>
+                            <div class="stage-visual">
+                                <i class="fas fa-file-invoice fa-3x"></i>
+                            </div>
+                            <div class="stage-info">
+                                <h3>AUTO REPORT</h3>
+                                <p>Automated report generation</p>
+                                <div class="stage-tags">
+                                    <span>N8N</span><span>INFLUXDB</span><span>GOOGLE SHEETS</span><span>GOOGLE DOCS</span><span>APP SCRIPT</span>
+                                </div>
+                            </div>
+                            <div class="stage-actions">
+                                <a href="https://1drv.ms/b/c/0428e51e26843851/IQQlayVoFsPoTIZc1GzcbdFOARaCOZHElr8oKes_easINsA" 
+                                   target="_blank" 
+                                   class="press-start-btn">DETAILS</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="path-connector"></div>
+                </div>
+
+                <!-- Level 13 -->
+                <div class="stage-unit">
+                    <div class="stage-node">
+                        <div class="node-marker">13</div>
+                        <div class="stage-box">
+                            <div class="stage-header">
+                                <span class="lvl-num">1-13</span>
+                            </div>
+                            <div class="stage-visual">
+                                <i class="fas fa-smog fa-3x"></i>
+                            </div>
+                            <div class="stage-info">
+                                <h4>SMELL MODEL APP</h4>
+                                <p>Smell model application</p>
+                                <div class="stage-tags">
+                                    <span>PYTHON (STREAMLIT)</span><span>INFLUXDB</span>
+                                </div>
+                            </div>
+                            <div class="stage-actions">
+                                <a href="https://1drv.ms/b/c/0428e51e26843851/IQSDX4glAglaTZUns0umaemzAXJmQod7MS0Zw_D8BMMHGPU" 
+                                   target="_blank" 
+                                   class="press-start-btn">DETAILS</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="path-connector"></div>
+                </div>
+
+                <!-- Level 14 -->
+                <div class="stage-unit">
+                    <div class="stage-node">
+                        <div class="node-marker">14</div>
+                        <div class="stage-box">
+                            <div class="stage-header">
+                                <span class="lvl-num">1-14</span>
+                            </div>
+                            <div class="stage-visual">
+                                <i class="fas fa-bell fa-3x"></i>
+                            </div>
+                            <div class="stage-info">
+                                <h3>ONLINE/OFFLINE MONITORING</h3>
+                                <p>Online/Offline monitoring system <br>and customer line groups notification</p>
+                                <div class="stage-tags">
+                                    <span>NODE-RED</span><span>JAVASCRIPT</span><span>MYSQL</span><span>LINE</span>
+                                </div>
+                            </div>
+                            <div class="stage-actions">
+                                <a href="https://1drv.ms/b/c/0428e51e26843851/IQQ-mm_sP4byRI30vKGO8mbwAQz02HpVlIGyAtb-NlW2oBg" 
+                                   target="_blank" 
+                                   class="press-start-btn">DETAILS</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="path-connector"></div>
+                </div>
+
+                <!-- Level 15 -->
+                <div class="stage-unit">
+                    <div class="stage-node">
+                        <div class="node-marker">15</div>
+                        <div class="stage-box">
+                            <div class="stage-header">
+                                <span class="lvl-num">1-15</span>
+                            </div>
+                            <div class="stage-visual">
+                                <i class="fas fa-exclamation-triangle fa-3x"></i>
+                            </div>
+                            <div class="stage-info">
+                                <h3>ODOR-ALERT BOT</h3>
+                                <p>Alerts when odor levels exceed limits</p>
+                                <div class="stage-tags">
+                                    <span>NODE-RED</span><span>JAVASCRIPT</span><span>INFLUXDB</span><span>LINE</span>
+                                </div>
+                            </div>
+                            <div class="stage-actions">
+                                <a href="https://1drv.ms/b/c/0428e51e26843851/IQTJkmHbTf6dQKwgjjUjLvYnAckuRR7I_wV4x0wb01EJbRI" 
+                                   target="_blank" 
+                                   class="press-start-btn">DETAILS</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="path-connector"></div>
+                </div>
+
+                 <!-- Level 16 -->
+                <div class="stage-unit">
+                    <div class="stage-node">
+                        <div class="node-marker">16</div>
+                        <div class="stage-box">
+                            <div class="stage-header">
+                                <span class="lvl-num">1-16</span>
+                            </div>
+                            <div class="stage-visual">
+                                <i class="fab fa-raspberry-pi fa-3x"></i>
+                            </div>
+                            <div class="stage-info">
+                                <h3>SETTING RASPBERRY PI</h3>
+                                <p>Configure and manage Raspberry Pi settings</p>
+                            </div>
+                            <div class="stage-actions">
+                                <a href="#" class="press-start-btn disabled">NOT PUBLISHED</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="path-connector"></div>
+                </div>
+
+                <!-- Level 17 -->
+                <div class="stage-unit">
+                    <div class="stage-node">
+                        <div class="node-marker">17</div>
+                        <div class="stage-box">
+                            <div class="stage-header">
+                                <span class="lvl-num">1-17</span>
+                            </div>
+                            <div class="stage-visual">
+                                <i class="fas fa-robot fa-3x"></i>
+                            </div>
+                            <div class="stage-info">
+                                <h3>ODOO API FETCHING FOR MUI OPS BOT</h3>
+                                <p>Fetching employee data from Odoo API and processing it for the agent</p>
+                                <div class="stage-tags">
+                                    <span>N8N</span><span>JAVASCRIPT</span><span>XML-RPC</span>
+                                </div>
+                            </div>
+                            <div class="stage-actions">
+                                <a href="https://1drv.ms/b/c/0428e51e26843851/IQR0_uQVqHKWQLy10rwPglQwAX87EzRFEDqMpgSsFVFSboE" 
+                                   target="_blank" 
+                                   class="press-start-btn">DETAILS</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="path-connector"></div>
+                </div>
+
+                <!-- Level 18 -->
+                <div class="stage-unit">
+                    <div class="stage-node">
+                        <div class="node-marker">18</div>
+                        <div class="stage-box">
+                            <div class="stage-header">
+                                <span class="lvl-num">1-18</span>
+                            </div>
+                            <div class="stage-visual">
+                                <i class="fas fa-satellite-dish fa-3x"></i>
+                            </div>
+                            <div class="stage-info">
+                                <h3>MONITORING SENSORS</h3>
+                                <p>Monitoring sensor data <br>and alerting to Telegram</p>
+                                <div class="stage-tags">
+                                    <span>GRAFANA</span><span>NODE-RED</span><span>TELEGRAM</span><span>INFLUXDB</span><span>JAVASCRIPT</span>
+                                </div>
+                            </div>
+                            <div class="stage-actions">
+                                <a href="https://1drv.ms/b/c/0428e51e26843851/IQS5-TkygBChTpcBlNc03fuqAUOjB70v8P4lSg0xeR8_zWM" 
+                                   target="_blank" 
+                                   class="press-start-btn">DETAILS</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="path-connector"></div>
+                </div>
+
+                 <!-- Level 19 -->
+                <div class="stage-unit">
+                    <div class="stage-node">
+                        <div class="node-marker">19</div>
+                        <div class="stage-box">
+                            <div class="stage-header">
+                                <span class="lvl-num">1-19</span>
+                            </div>
+                            <div class="stage-visual">
+                                <img src="images/databricks.svg" alt="Databricks" style="height: 3em; width: auto;">
+                            </div>
+                            <div class="stage-info">
+                                <h3>COLD DATA PIPELINE (DATABRICKS)</h3>
+                                <p>Cold data pipeline using Azure Databricks</p>
+                                <div class="stage-tags">
+                                    <span>NODE-RED</span><span>MQTT</span><span>JAVASCRIPT</span><span>AZURE BLOB STORAGE</span><span>DATABRICKS</span><span>AZURE CONTAINER APPS</span><span>AZURE CONTAINER REGISTRY</span><span>PYTHON</span><span>DOCKER</span><span>GRAFANA</span><span>RESTFUL API</span>
+                                </div>
+                            </div>
+                            <div class="stage-actions">
+                                <a href="https://1drv.ms/b/c/0428e51e26843851/IQRhnPmPx5mVRbxuSXwdIHEEAc6Ncg7jfbdWOCUv8VBXjiU" 
+                                   target="_blank" 
+                                   class="press-start-btn">DETAILS</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="path-connector"></div>
+                </div>
+
+                <!-- Level 20 -->
+                <div class="stage-unit">
+                    <div class="stage-node">
+                        <div class="node-marker">20</div>
+                        <div class="stage-box">
+                            <div class="stage-header">
+                                <span class="lvl-num">1-20</span>
+                            </div>
+                            <div class="stage-visual">
+                                <img src="images/azure-synapse.svg" alt="Synapse" style="height: 3em; width: 3em;">
+                            </div>
+                            <div class="stage-info">
+                                <h3>COLD DATA PIPELINE (SYNAPSE)</h3>
+                                <p>Cold data pipeline using <br>Azure Synapse Analytics</p>
+                                <div class="stage-tags">
+                                    <span>NODE-RED</span><span>MQTT</span><span>JAVASCRIPT</span><span>AZURE BLOB STORAGE</span><span>AZURE SYNAPSE</span><span>MS SQL</span><span>GRAFANA</span><span>PYTHON</span>
+                                </div>
+                            </div>
+                            <div class="stage-actions">
+                                <a href="https://1drv.ms/b/c/0428e51e26843851/IQQs-DRWrKoLRLHJV7PPVI9SAevAbL9AIw_UWeEuoYmhm4c" 
+                                   target="_blank" 
+                                   class="press-start-btn">DETAILS</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="path-connector"></div>
+                </div>
+
+                <!-- Level 21 -->
+                <div class="stage-unit">
+                    <div class="stage-node">
+                        <div class="node-marker">21</div>
+                        <div class="stage-box">
+                            <div class="stage-header">
+                                <span class="lvl-num">1-21</span>
+                            </div>
+                            <div class="stage-visual">
+                                <i class="fas fa-sync-alt fa-3x"></i>
+                            </div>
+                            <div class="stage-info">
+                                <h3>AUTO SYNC DATA</h3>
+                                <p>Synchronize data between local-server <br>when server data is missing</p>
+                                <div class="stage-tags">
+                                    <span>RASPBERRY PI</span><span>INFLUXDB</span><span>PYTHON</span>
+                                </div>
+                            </div>
+                            <div class="stage-actions">
+                                <a href="https://1drv.ms/b/c/0428e51e26843851/IQQsrcGui0plRpf9LGQIED37AWDJlgv1utXR18B6qzErC-c" 
+                                   target="_blank" 
+                                   class="press-start-btn">DETAILS</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="path-connector"></div>
+                </div>
+
+                <!-- Level 22 -->
+                <div class="stage-unit">
+                    <div class="stage-node">
+                        <div class="node-marker">22</div>
+                        <div class="stage-box">
+                            <div class="stage-header">
+                                <span class="lvl-num">1-22</span>
+                            </div>
+                            <div class="stage-visual">
+                                <i class="fas fa-smog fa-3x"></i>
+                            </div>
+                            <div class="stage-info">
+                                <h3>SMELL LABEL APP</h3>
+                                <p>Smell label application</p>
+                                <div class="stage-tags">
+                                    <span>PYTHON (STREAMLIT)</span><span>INFLUXDB</span>
+                                </div>
+                            </div>
+                            <div class="stage-actions">
+                                <a href="https://1drv.ms/b/c/0428e51e26843851/IQRFodqHHIb1Ro0xdHtEhs8LAf6yi0S7foby3gh_69jUt5I" 
+                                   target="_blank" 
+                                   class="press-start-btn">DETAILS</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="path-connector"></div>
+                </div>
+
+                <!-- Level 23 -->
+                <div class="stage-unit">
+                    <div class="stage-node">
+                        <div class="node-marker">23</div>
+                        <div class="stage-box">
+                            <div class="stage-header">
+                                <span class="lvl-num">1-23</span>
+                            </div>
+                            <div class="stage-visual">
+                                <i class="fas fa-headset fa-3x"></i>
+                            </div>
+                            <div class="stage-info">
+                                <h3>HELPDESK TASKS</h3>
+                                <p>Grafana , Server , Web Analysis</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="path-connector"></div>
+                </div>
+
+                <!-- Level 24 -->
+                <div class="stage-unit">
+                    <div class="stage-node">
+                        <div class="node-marker">24</div>
+                        <div class="stage-box">
+                            <div class="stage-header">
+                                <span class="lvl-num">1-24</span>
+                            </div>
+                            <div class="stage-visual">
+                                <i class="fab fa-docker fa-3x"></i>
+                            </div>
+                            <div class="stage-info">
+                                <h3>MICROSERVICES MONITORING</h3>
+                                <p>Monitoring microservices Analysis Web App<br>using cAdvisor and Prometheus</p>
+                                <div class="stage-tags">
+                                    <span>CADVISOR</span><span>PROMETHEUS</span><span>BLACKBOX EXPORTER</span><span>GRAFANA</span><span>DOCKER</span><span>KUBERNETES</span>
+                                </div>
+                            </div>
+                            <div class="stage-actions">
+                                <a href="https://1drv.ms/b/c/0428e51e26843851/IQQpY8PEEtlWT4ErmWi8yHd7AV0HvbUwOV8Xf-MkHj6qIb4" 
+                                   target="_blank" 
+                                   class="press-start-btn">DETAILS</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="path-connector"></div>
+                </div>
+
+                <!-- Level 25 -->
+                <div class="stage-unit">
+                    <div class="stage-node">
+                        <div class="node-marker">25</div>
+                        <div class="stage-box">
+                            <div class="stage-header">
+                                <span class="lvl-num">1-25</span>
+                            </div>
+                            <div class="stage-visual">
+                                <i class="fas fa-plug fa-3x"></i>
+                            </div>
+                            <div class="stage-info">
+                                <h3>API DISPERSION MODEL</h3>
+                                <p>API station data for dispersion analysis</p>
+                                <div class="stage-tags">
+                                <span>PYTHON</span><span>INFLUXDB</span><span>REDIS</span><span>REST API</span><span>DOCKER</span><span>NGINX</span><span>AZURE</span>
+                                </div>
+                            </div>
+                            <div class="stage-actions">
+                                <a href="https://1drv.ms/b/c/0428e51e26843851/IQQH7CQbfruQTZvjEPqdl7HyAfJNDqciYd4bEtc6aAQ3zgc" 
+                                   target="_blank" 
+                                   class="press-start-btn">DETAILS</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="path-connector"></div>
+                </div>
+
+                <!-- Locked -->
+                <div class="stage-unit">
+                    <div class="stage-node locked">
+                        <div class="node-marker">?</div>
+                        <div class="stage-box">
+                            <div class="stage-header">
+                                <span class="lvl-num"></span>
+                                <span class="score">LOCKED</span>
+                            </div>
+                            <div class="stage-visual">
+                                <i class="fas fa-lock fa-2x"></i>
+                            </div>
+                            <div class="stage-info">
+                                <h3>Coming Soon</h3>
+                                <p>More projects and achievements<br>will be added in the future</p>
+                                <div class="stage-tags">
+                                    <span>????</span>
+                                </div>
+                            </div>
+                            <div class="stage-actions">
+                                <a href="#" class="press-start-btn disabled">LOCKED</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="path-connector end"></div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section-container">
+        <h2 class="section-title reveal-on-scroll reveal-up">INTRODUCING PLAYER</h2>
+        
+        <div class="contact-content-card">
+            <div class="guild-card reveal-on-scroll reveal-rotate">
+                <!-- Card Header -->
+                <div class="card-header-pixel">
+                    <span>★ ADVENTURER CARD ★</span>
+                </div>
+
+                <div class="card-body">
+                    <!-- Left: Avatar -->
+                    <div class="card-avatar-section">
+                        <div class="avatar-frame">
+                            <img src="images/mr_phuris_chopper.jpg" alt="Player Avatar">
+                        </div>
+                        <div class="avatar-name">PHURIS SOMKAEW</div>
+                    </div>
+
+                    <!-- Right: Stats -->
+                    <div class="card-stats-section">
+                        <div class="stat-row">
+                            <span class="stat-label">Email</span>
+                            <span class="dots"></span>
+                            <span class="stat-value"><a href="mailto:phuris.s@ku.th">phuris.s@ku.th</a></span>
+                        </div>
+                        <div class="stat-row">
+                            <span class="stat-label">Tel</span>
+                            <span class="dots"></span>
+                            <span class="stat-value"><a href="tel:0918459149">091-8459149</a></span> <!-- Thailand +66 implicit for local, or I can add it -->
+                        </div>
+                        <div class="stat-row">
+                            <span class="stat-label">LinkedIn</span>
+                            <span class="dots"></span>
+                            <span class="stat-value"><a href="https://www.linkedin.com/in/phuris-somkaew-698533276/" target="_blank">Click Here!</a></span>
+                        </div>
+                        <div class="stat-row">
+                            <span class="stat-label">Status</span>
+                            <span class="dots"></span>
+                            <span class="stat-value status-online">OPEN TO WORK</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Footer/Actions -->
+                <div class="card-footer-pixel">
+                    <p class="footer-note">READY TO JOIN YOUR TEAM !</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our codes -->
+    <script src="js/main.js"></script>

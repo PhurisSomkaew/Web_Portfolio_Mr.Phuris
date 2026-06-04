@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" shape-rendering="crispEdges">
+  <desc>8-bit Pixel Art Wizard NPC</desc>
+  
+  <!-- Hat (Cyan) -->
+  <rect x="5" y="1" width="6" height="1" fill="#00ffff" />
+  <rect x="4" y="2" width="8" height="1" fill="#00ffff" />
+  <rect x="3" y="3" width="10" height="1" fill="#00ffff" />
+  <rect x="2" y="4" width="12" height="1" fill="#00ffff" />
+
+  <!-- Face (Skin) -->
+  <rect x="4" y="5" width="8" height="4" fill="#ffdbac" />
+  
+  <!-- Eyes (Black) -->
+  <rect x="5" y="6" width="1" height="1" fill="#000000" />
+  <rect x="9" y="6" width="1" height="1" fill="#000000" />
+  
+  <!-- Beard (White) -->
+  <rect x="4" y="8" width="8" height="2" fill="#ffffff" />
+  <rect x="5" y="10" width="6" height="1" fill="#ffffff" />
+  <rect x="6" y="11" width="4" height="1" fill="#ffffff" />
+
+  <!-- Robe (Hot Pink) -->
+  <rect x="3" y="9" width="1" height="7" fill="#ff00cc" />
+  <rect x="12" y="9" width="1" height="7" fill="#ff00cc" />
+  <rect x="4" y="12" width="8" height="4" fill="#ff00cc" />
+  
+  <!-- Staff (Brown/Yellow) -->
+  <rect x="1" y="5" width="1" height="11" fill="#8B4513" />
+  <rect x="0" y="4" width="3" height="1" fill="#ffff00" /> <!-- Staff Top -->
+  <rect x="1" y="3" width="1" height="1" fill="#ffff00" /> <!-- Staff Gem -->
+
+</svg>
